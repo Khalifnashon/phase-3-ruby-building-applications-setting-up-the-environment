@@ -1,7 +1,15 @@
 #!/usr/bin/env ruby 
+# run the file using ruby bin/run
 
-require_relative '../lib/garden.rb'
-require_relative '../lib/plant.rb'
+# In the first lines of recognizable Ruby code, we require both our local 
+# files located in lib:
+
+
+require_relative '../config/environment'
+
+
+# With Garden and Plant loaded, we can proceed to run our very simple application — 
+# relating a few Plant instances to a Garden instance.
 
 lawn = Garden.new(name: 'Front Lawn')
 
